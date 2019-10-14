@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BURAK 2016280019 </title>
+</head>
+<body style="background-color:powderblue;" >
+<h1>BURAK GOMEC 2016280019</h1>
+<h2>2019 Güz Döneminin ilk ödevi</h2>
+<label for="id1">Metin kutusu 1</label>
+<input type='number' id='id1' />
+<br>
+<label for="id2">Metin kutusu 2</label>
+<input type='number' id='id2' />
+<br><br>
+<input type="button" id="toplama" value="Topla" >
+<br><br>
+<label for="id3">Metin kutusu 3</label>
+<input type='text' id='id3' />
+<br>
+<label for="id4">Metin kutusu 4</label>
+<input type='text' id='id4' />
+<br><br>
+<input type="button" id="yapistir" value="Yapıştır">
+<br>
+<script>
+
+var btn=document.getElementById("toplama");
+            btn.onclick=function(){
+                var s1=document.getElementById("id1").value;
+                var s2=document.getElementById("id2").value;
+                var toplam= parseInt(s1) + parseInt(s2);
+                alert(toplam);
+            }
+
+
+var btn2=document.getElementById("yapistir");
+			btn2.onclick=function(){
+				var s3=document.getElementById("id3").value;
+				var s4=document.getElementById("id4").value;
+				var birlestir=s3+' '+s4;
+				alert(birlestir);
+			}
+
+	</script>
+</body>
+</html>
